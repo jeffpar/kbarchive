@@ -1,14 +1,14 @@
 ---
 layout: page
-title: "Miscrosoft Systems Journal"
+title: "Microsoft Systems Journal"
 permalink: /id/msj/
 ---
 
-## KB Articles for Miscrosoft Systems Journal
+## KB Articles for Microsoft Systems Journal
 
 - [Q97832: Microsoft Systems Journal: May 1993](../../kb/097/Q97832/)
-- [Q102030: Microsoft Systems Journal: September 1993](../../kb/102/Q102030/)
 - [Q99005: Microsoft Systems Journal: July 1993](../../kb/099/Q99005/)
+- [Q102030: Microsoft Systems Journal: September 1993](../../kb/102/Q102030/)
 - [Q117656: Microsoft Systems Journal: August 1994](../../kb/117/Q117656/)
 - [Q119147: Microsoft Systems Journal: September 1994](../../kb/119/Q119147/)
 - [Q121381: Microsoft Systems Journal: November 1994](../../kb/121/Q121381/)
