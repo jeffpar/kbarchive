@@ -3,6 +3,9 @@
 
 @import "{{ site.theme }}";
 
+.inner {
+  width: 75% !important;
+}
 li {
   list-style-type: none !important;
   padding-left: 0 !important;
